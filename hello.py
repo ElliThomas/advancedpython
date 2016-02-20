@@ -5,11 +5,13 @@ app = Flask("MyApp")
 
 
 @app.route("/")
-def about():
-	return render_template("about.html")
+def hello():
+	return render_template("hello.html")
+
+# just checking
 
 @app.route("/<name>")
 def hello_someone(name):
-	return render_template ("about.html", name=name.title())
+	return render_template("hello.html", name=name.title())
 
 app.run()
