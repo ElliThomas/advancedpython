@@ -1,0 +1,12 @@
+A dictionary allows you to use a key to link one name (like "Elli") to a load of other information (like my phone number and address). 
+
+
+users_who_follow_you = ["Elli", "Jim"]
+
+user_to_profile = {
+		"Elli":	{
+			"Bio" = "This is all about me",
+		}
+}
+
+print user_to_profile["Elli"]
