@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
-<body>
 
-<h1>Greatest picture</h1>
-<img src="https://michellesiegel.files.wordpress.com/2015/12/crazy-crazy-dog.jpg" style="width:304px;height:228px;">
-
-</body>
-</html>
+<title>Hello from Flask </title>
+{% if name %}
+	<h1>Hello {{ name }}!</h1>
+{% else %}
+	<h1>Hello World!</h1>
+{% endif %}
